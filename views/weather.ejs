@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <form action="/" method="POST">
+        <div class="container">
+            <div class="title">
+                <a href="/">
+                    <h1>Weather App</h1>
+                </a>
+            </div>
+            <div class="search">
+                <input type="text" name="cityName" autocomplete="off" placeholder="Search City">
+                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>    
+            </div>
+        </div>
+    </form>
+<div class="weatherContainer">
+    <div class="top">
+        <div class="pName">
+            <h1><%=placeName%></h1>
+            <p>City</p>
+        </div>
+        <div class="imgName">
+            <img src="<%=icon%>" class="weatherImg">
+            <h3><%=desp%></h3>
+            <h1><%=temperature%>°C</h1>
+        </div>
+        <div class="day">
+            <h3 class="dayText"><%= Day%></h3>
+        </div>
+    </div>
+    <div class="console">
+        <div class="des">
+            <p>Description</p>
+            <h3><%=desp%></h3>
+        </div>
+
+        <div class="speed">
+            <p>Speed</p>
+            <h3><%=speed%>m/s</h3>
+        </div>
+     <div class="humility">
+         <p>Humility</p>
+        <h3><%=hum%>%</h3>    
+     </div>
+    </div>
+</div>
+
+<%-include("partials/footer.ejs")%>

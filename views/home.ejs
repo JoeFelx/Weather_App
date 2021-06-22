@@ -1,0 +1,18 @@
+<%- include("partials/header.ejs")%>
+
+    <div class="web"></div>
+    <div class="heroContainer">
+        <div class="hero">
+            <form action="/" method="POST">
+                <div class="content">
+                    <h1 class="heroText">Do you know the <span>Weather</span> of the Cites?</h1>
+                    <div class="heroSearch">
+                        <input type="text" name="cityName" autocomplete="off" placeholder="Search City">
+                        <button type="submit">Search</button> 
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<%-include("partials/footer.ejs")%>

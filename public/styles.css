@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+body{
+    font-family: 'Dela Gothic One', cursive;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #171717;
+}
+
+h1{
+    color: #DA0037;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+h3{
+    color: white;
+    text-transform: uppercase;
+}
+
+p{
+    color: #444444;
+    opacity: 1;
+    text-transform: uppercase;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+input{
+    background-color: transparent;
+    outline: none;
+    border: 2px solid #DA0037;
+    border-radius: 20px 0 0 25px;
+    color:#EDEDED;
+    width: 15rem;
+    height: 1.4rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    font-family: 'Dela Gothic One', cursive;
+}
+
+::placeholder{
+    color: #EDEDED;
+    opacity: .2;
+}
+
+button{
+    width: 3rem;
+    height: 28px;
+    position: relative;
+    right: 6px;
+    background: #DA0037;
+    outline: none;
+    border: none;
+    color: #171717;
+    border-radius: 0 20px 20px 0;
+    align-items: center;
+    font-family: 'Dela Gothic One', cursive;
+}
+
+span{
+    color:#EDEDED;
+}
+
+.container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    opacity: 1;
+    margin: 0 10%;
+}
+
+.search{
+    display: flex;
+}
+
+.content{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.heroSearch{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroSearch input{
+    width: 40rem;
+    height: 2rem;
+}
+
+.heroSearch button{
+    height: 38px;
+    width: 6rem;
+}
+
+.web{
+    background-image: url("/assets/bg.jpg");
+    height: 84vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .5;
+}
+
+.hero{
+    position: absolute;
+    right: 4rem;
+    top: 17rem;
+    letter-spacing: 5px;
+    flex-wrap: wrap;
+}
+
+.heroText{
+    color: #444444;
+    text-shadow: 2px 0px #DA0037;
+}
+
+.Herofooter{
+    text-align: center;
+    margin-top: 8rem;
+}
+
+.Herofooter p{
+    font-size: 10px;
+}
+
+/* WEATHER PAGE */
+
+.weatherContainer{
+    margin: 0 15%;
+    height: 80vh;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    flex-wrap: wrap;
+}
+
+.top{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #444444;
+}
+
+.console{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0 0 0;
+    margin-bottom: 0;
+}
+
+
+.console h3{
+    letter-spacing: 2px;
+}
+
+.speed{
+    border-left:  1px solid #444444;
+    border-right:  1px solid #444444;
+    padding: 0 6rem;
+}
+
+.dayText{
+    font-size: 2.3rem;
+}
+
+.weatherImg{
+    width: 8rem;
+    height: 8rem;
+}
+
+.pName{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.day{
+    display: flex;
+    justify-content: center;
+}
+
+.imgName h3{
+    font-size: 15px;
+}
+
+
+/* About Page */
+
+.card{
+    margin: 2rem 10rem;
+    background-color: #171717;
+    box-shadow: 8px 6px 1rem;
+    padding: 2rem 4rem;
+}
+
+
+.aboutTitle p{
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.aboutTitle a{
+    text-decoration: none;
+    color: #EDEDED;
+    opacity: .5;
+}
+
+.aboutTitle a:hover{
+    color: yellow;
+    opacity: 1;
+}
+
+.aboutTitle span{
+    color: yellow;
+    font-size: 13px;
+}
+
+.aboutSection p{
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.aboutSection a{
+    text-decoration: none;
+    color: #EDEDED;
+    opacity: .5;
+}
+
+.aboutSection a:hover{
+    color: yellow;
+    opacity: 1;
+}
+
+.aboutSection span{
+    color: yellow;
+    font-size: 13px;
+}
+
+
+/* Mobile View */
+
+
+@media(max-width:768px) {
+    .container{
+        margin: 5px 8px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .web{
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: .5;
+    }
+
+    .title h1{
+        font-size: 20px;
+    }
+
+    .search input{
+        width: 10rem;
+        font-size: 8px;
+    }
+
+    .search button{
+        width: 2rem;
+    }
+
+    .hero{
+        position: absolute;
+        text-align: center;
+        right: 1px;
+        left: 1px;
+        top: 8rem;
+        letter-spacing: 5px;
+        flex-wrap: wrap;
+        line-height:4rem;
+    }
+
+    .content{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px;
+    }
+
+    .content h1{
+        font-size: 2rem;
+    }
+
+    .content span{
+        flex-wrap: wrap;
+    }
+
+    .heroSearch input{
+        width: 14rem;
+        font-size: 10px;
+    }
+    .heroSearch button{
+        width: 4rem;
+        font-size: 10px;
+    }
+
+    .Herofooter{
+        text-align: center;
+        margin-top: 1rem;
+    }
+    
+    .Herofooter p{
+        font-size: 5px;
+    }
+
+    /* Weather View */
+
+    .weatherContainer{
+        margin: 0;
+        min-height: 79vh;
+    }
+
+    .pName h1{
+        font-size: 1rem;
+        writing-mode: vertical-lr;
+        text-orientation: sideways;
+        margin: 0px 0px 0px 10px;
+    }
+
+    .pName p{
+        display: none;
+    }
+
+    .dayText{
+        font-size: 20px;
+        margin: 0px 10px 0px 0px;
+        writing-mode: vertical-lr;
+        text-orientation: sideways;
+    }
+
+    .weatherImg{
+        width: 5rem;
+        height: 5rem;
+        margin: 0;
+    }
+
+    .imgName h1{
+        font-size: 1.5rem;
+    }
+
+    .imgName h3{
+        font-size: 13px;
+    }
+
+    h3{
+        font-size: 10px;
+    }
+
+    .top{
+        padding: 2rem 0 10px 0;
+        margin-bottom: 0;
+    }
+
+    .console{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        bottom: 20px;
+    }
+
+    .console p{
+        font-size: 10px;
+    }
+
+    .des{
+        border-bottom:  1px solid #444444;
+        padding: 5px 0;
+    }
+
+    .speed{
+        border-bottom:  1px solid #444444;
+        border-right: none;
+        border-left: none;
+        padding: 5px 0;
+    }
+
+    .humility{
+        border-bottom:  1px solid #444444;
+        padding: 5px 0;
+        margin-bottom: 20px;
+    }
+    .weatherFooter{
+        text-align: center;
+        position: relative;
+        bottom: 7rem;
+        margin-bottom: 0;
+    }
+    
+    .weatherFooter p{
+        font-size: 6px;
+    }
+    
+    /* About Page */
+
+    .card{
+        margin: 1rem;
+        background-color: #171717;
+        box-shadow: 8px 6px 1rem;
+        padding: 4px 8px;
+    }
+
+    .card h1{
+        font-size: 20px;
+    }
+
+    .card p{
+        font-size: 10px;
+    }
+}
+
