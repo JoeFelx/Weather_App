@@ -7,6 +7,7 @@ Weather app is basic project to show the current of places by using [Open Weathe
 * **CSS**
 * **EJS.** 
 * **Javascript.**
+* **Node.js**
 * **Express**
 
 ## Hosting
