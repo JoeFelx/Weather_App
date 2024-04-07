@@ -13,4 +13,4 @@ Weather app is basic project to show the current of places by using [Open Weathe
 ## Hosting
 Hosting is done by [Heroku](https://www.heroku.com) for free.
 
-Check out the [Weather App](https://quiet-everglades-69506.herokuapp.com/).
+Check out the ~~[Weather App](https://quiet-everglades-69506.herokuapp.com/)~~
